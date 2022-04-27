@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search Drinks">
+    <meta name="keywords" content="Search, drinks, alcohol, tragos, party, fiesta ">
+    <meta name="theme-color:#FA5428 ">
+
+<link rel="shortcut icon" href="./build/img/Drink Ideas.webp" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link rel="stylesheet" href="./build/css/app.css" />
+    <title>DrinkIdeas</title>
+    <link rel="manifest" href="build/manifest.json">
+  </head>
+  <body>
+    <a id="#top"></a>
+    <header class="header" id="header">
+      <nav class="nav">
+        
+        <div class="logo">
+          <img src="build/img/logowhite.webp" alt="">
+        </div>
+     
+        <div>
+        <ul>
+          <li>
+            <a href="/"
+              ><img src="./build/img/icons/casa.webp" class="ico" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./sections/info.html">
+              <img src="./build/img/icons/informacion.webp" class="ico" alt=""
+            /></a>
+          </li>
+          <li class="op-menu">
+           <a href="./sections/categorias.html"> <img src="./build/img/icons/copa-de-vino.webp" class="ico" alt="" /></a>
+
+          </li>
+        </ul>
+
+        </div>
+      </nav>
+      <div class="overlay-header">
+        <img
+          class="logo-white wow animate__animated animate__shakeX"
+          src="./build/img/logowhite.webp"
+          alt=""
+        />
+        <div class="search">
+          <input
+          class="form-control"
+            type="text"
+            id="drink"
+            placeholder="Drink name "
+          />
+          <button class="btn" onclick="loadDrinks()">Search</button>
+        </div>
+        <div class="spi">
+       
+      </div>
+      
+    </header>
+    <a id="tragos"></a>
+
+    <div class="hidden">
+   <div class="top  oculto" id="topbutton"> <a href="#top"><img src="build/img/icons/angle-up-solid.svg" alt="top"></a></div>
+    </div>
+     <section id="cards" class="cards" >
+    </section> 
+    
+
+
+
+
+    <footer class="footer">
+
+      &copy; Exequiel Schiavo 2022
+    </footer>
+    
+    <script src="./build/js/app.js"></script>
+    <script src="./build/js/loaddrinks.js"></script>
+   
+    <script src="./build/js/serviceworker.js"></script>
+   
+  </body>
+</html>

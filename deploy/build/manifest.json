@@ -1,0 +1,31 @@
+{
+  "name": "DrIdeas",
+  "short_name": "DrIdeas",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FA5428",
+  "theme_color": "#FA5428",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./img/iconsPwa/logowhite.png",
+      "type": "image/webp",
+      "sizes": "75x75"
+    },
+    {
+      "src": "./img/iconsPwa/Drink Ideas.png",
+      "type": "image/webp",
+      "sizes": "114x114"
+    },
+    {
+      "src": "./img/iconsPwa/Drink Ideas (1).png",
+      "type": "image/webp",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./img/iconsPwa/Drink Ideas (2).png",
+      "type": "image/webp",
+      "sizes": "512x512"
+    }
+  ]
+}

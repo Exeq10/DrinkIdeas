@@ -1,0 +1,23 @@
+{
+  "name": "drinkideas",
+  "version": "1.0.0",
+  "description": "drinkideas",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drinks",
+    "shots",
+    "alcohol"
+  ],
+  "author": "Exequiel Schiavo",
+  "license": "Unlicense",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.50.1"
+  }
+}

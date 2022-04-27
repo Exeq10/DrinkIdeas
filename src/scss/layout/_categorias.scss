@@ -1,0 +1,89 @@
+@use'../base/variables' as v;
+@use'../base/mixins' as m;
+
+
+.tittle{
+    text-align: center;
+    font-family: v.$fuente;
+    font-size: 2.3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    font-weight: 100;
+
+    img{
+        width: 3rem;
+    }
+}
+
+.categoria{
+    width: 50%;
+    margin: 0 auto;
+    @include m.grid (2,2rem);
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+
+.item-cat{
+    width: 100%;
+    
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 300ms;
+    box-shadow: -2px 1px 3px rgba(0, 0, 0, 0.301);
+
+    &:hover .over-cat{
+        height: 100%;
+        display: flex
+        ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fa5528af;
+
+
+    }
+
+    .img-cat{
+        width: 30rem;
+       
+        z-index: -1;
+      
+        img{
+            height: 25rem;
+        }
+       
+
+    }
+
+
+    .over-cat{
+      
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 0%;
+       
+        
+
+        h3{
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            font-family: v.$fuente2;
+        }
+
+    }
+}
+
+
+
