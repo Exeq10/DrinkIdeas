@@ -22,9 +22,15 @@
 .categoria{
     width: 50%;
     margin: 0 auto;
-    @include m.grid (2,2rem);
+    @include m.grid (1,1rem);
+   
     align-items: center;
     justify-items: center;
+
+    @include m.tablet {
+       
+        @include m.grid (2,2rem);
+    } 
 
 }
 

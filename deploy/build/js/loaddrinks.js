@@ -5,6 +5,7 @@ const container = document.querySelector(".spi");
 const logo = document.querySelector(".logo-white");
 
 const loadDrinks = () => {
+  cards.style.display = "flex";
   cards.innerHTML = "";
 
   const spinner = document.createElement("div");

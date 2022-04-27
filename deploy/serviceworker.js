@@ -1,7 +1,20 @@
-self.addEventListener("install", (e) => {
-  console.log("instalado el Service Worker");
+const nombreCache = "idDrink";
+const archivos = [
+  "/",
+  "/index.html",
 
-  console.log(e);
+  "/build/css/app.css",
+  "/build/js/app.js",
+  "/build/js/loaddrinks.js",
+];
+
+self.addEventListener("install", (e) => {
+  e.waitUntil(
+    caches.open(nombreCache).then((cache) => {
+      console.log("cacheando");
+      cache.addAll(archivos);
+    })
+  );
 });
 
 /* activar */

@@ -890,13 +890,23 @@ p {
   width: 50%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
   padding: 3rem;
   justify-content: center;
   align-content: center;
   align-items: center;
   justify-items: center;
+}
+@media (min-width: 768px) {
+  .categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .item-cat {
